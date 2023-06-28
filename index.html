@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;900&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/hover.css">
+    <link rel="stylesheet" href="styles/Tablet.css">
+    <link rel="stylesheet" href="styles/cart.css">
+</head>
+<body>
+    <div class="overLay">
+        <div onclick="toggleCart()" class="close-area"></div>
+        <div class="cart-menu">
+            <div class="orders-header">
+                <h1>Your Order</h1>
+                <button onclick="toggleCart()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="orders-containor">
+                <ul class="orders-list">
+                
+                </ul>
+            </div>
+            <div class="cart-footer">
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <h2 class="subtotal-price">91,000 IQD</h2>
+                </div>
+                <button class="applePay-btn"><i class="fab fa-apple-pay"></i></button>
+                <button class="CheckOut-btn">Continue to Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div class="order-bar">
+        <p style="color:white;">We're open and available for takeaway & delivery. <span><a style="color:white; font-weight: 600; text-decoration: none;" href="#">Order Now</a></span></p>
+    </div>
+    <nav>
+        <div class="nav-containor">
+            <h3 class="logo">Logo.</h3>
+            <ul class="navBar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#orders">Order</a></li>
+                <li><a href="#Company">Company</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <button onclick="toggleCart()" class="Cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span>0</span>
+            </button>
+            
+        </div>
+    </nav>
+    <div class="first-block">
+        <div class="flex-containor">
+            <div class="hero">
+                <h1 class="header-text">Beautiful food &<br>takeaway, <span class="header-span">delivered</span> to your door.</h1>
+                <p class="header-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+                <button class="order-btn">Place an order</button>
+                
+            </div>
+            <img src="images/5e865e09d8efa395f376b5c1_Hero Image.png" class="header-img">
+        </div>
+    </div>
+    <div class="second-block">
+        <div class="second-flex-containor">
+            <div class="second-hero">
+                <h1 style="color: #35b8be;" class="header-text">The home of<br>fresh products</h1>
+                <p class="header-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+                <button class="order-btn">More about us</button>
+                
+            </div>
+            <img src="images/5e865e09d8efa3ccac76b5c6_Group 33.png" class="header-img">
+        </div>
+    </div>
+    <div class="third-block" id="Company">
+        <h1 class="head-title">How it works.</h1>
+        <div class="cards-containor">
+            <div class="card">
+                <img src="images/111.png">
+                <h2 class="card-header">Adapt your menu items</h2>
+                <p class="card-text">Easily adapt your menu using the webflow CMS and allow customers to browse your items.</p>
+            </div>
+            <div class="card">
+                <img src="images/222.png">
+                <h2 class="card-header">Accept online orders & takeout</h2>
+                <p class="card-text">Let your customers order and pay via the powerful ecommerce system, or simple let them call your store.</p>
+            </div>
+            <div class="card">
+                <img src="images/333.png">
+                <h2 class="card-header">Manage delivery or takeout</h2>
+                <p class="card-text">Manage your own logistics and take orders simply through the ecommerce system.</p>
+            </div>
+        </div>
+    </div>
+    <div class="forth-containor" >
+        <h1 class="head-title">Browse our menu</h1>
+        <p class="food-caption">Use our menu to place an order online, or phone our store to,<br>place a pickup order. Fast and fresh food.</p>    
+        <div class="food-buttons" id="orders">
+            <button class="Burgers-btn">Burgers</button>
+            <button class="Sides-btn">Sides</button>
+            <button class="Drinks-btn">Drinks</button>
+        </div>
+        <div class="food-tabs">
+            <div class="food-card">
+                
+                <img src="images/1.png">
+                <div class="food-title-wrap">
+                    <h3>Burger Dreams</h3>
+                    <h2 class="price">9,000 IQD</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consecte adipisicg elit. Reicndis aliquam repudiandae vel.</p>
+                
+                <div class="input-wrap">
+                    <input type="text" class="quantity-input" value="1">
+                    <button class="add-btn">Add To Cart</button>
+                </div>
+                <p id="real-price">9000</p>
+            </div>
+            <div class="food-card">
+                
+                <img src="images/2.png">
+                <div class="food-title-wrap">
+                    <h3>Burger Cali</h3>
+                    <h2 class="price">7,500 IQD</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consecte adipisicg elit. Reicndis aliquam repudiandae vel.</p>
+                <div class="input-wrap">
+                    <input type="text" class="quantity-input" value="1">
+                    <button class="add-btn">Add To Cart</button>
+                </div>
+                <p id="real-price">7500</p>
+            </div>
+            <div class="food-card" alt="12000">
+                
+                <img src="images/3.png">
+                <div class="food-title-wrap">
+                    <h3>Burger Spicy</h3>
+                    <h2 class="price">12,000 IQD</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consecte adipisicg elit. Reicndis aliquam repudiandae vel.</p>
+                <div class="input-wrap">
+                    <input type="text" class="quantity-input" value="1">
+                    <button class="add-btn">Add To Cart</button>
+                </div>
+                <p id="real-price">12000</p>
+            </div>
+            <div class="food-card" alt="8000">
+                <img src="images/6.png">
+                <div class="food-title-wrap">
+                    <h3>Burger Waldo</h3>
+                    <h2 class="price">8,000 IQD</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consecte adipisicg elit. Reicndis aliquam repudiandae vel.</p>
+                <div class="input-wrap">
+                    <input type="text" class="quantity-input" value="1">
+                    <button class="add-btn">Add To Cart</button>
+                </div>
+                <p id="real-price">8000</p>
+            </div>
+            <div class="food-card" alt="9500">
+                
+                <img src="images/4.png">
+                <div class="food-title-wrap">
+                    <h3>Burger Buddy</h3>
+                    <h2 class="price">9,500 IQD</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consecte adipisicg elit. Reicndis aliquam repudiandae vel.</p>
+                <div class="input-wrap">
+                    <input type="text" class="quantity-input" value="1">
+                    <button class="add-btn">Add To Cart</button>
+                </div>
+                <p id="real-price">9500</p>
+            </div>
+            <div class="food-card" alt="6500">
+               
+                <img src="images/5.png">
+                <div class="food-title-wrap">
+                    <h3>Burger Classic</h3>
+                    <h2 class="price">6,500 IQD</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consecte adipisicg elit. Reicndis aliquam repudiandae vel.</p>
+                <div class="input-wrap">
+                    <input type="text" class="quantity-input" value="1">
+                    <button class="add-btn">Add To Cart</button>
+                </div>
+            </div>
+            <p id="real-price">6500</p>
+        </div>
+        <button class="SeeMenu-btn">See Full Menu</button>
+    </div>
+    
+    <div class="fifth-block" id="FAQ">
+        <div class="second-flex-containor">
+            <img src="images/5e865e09d8efa3241b76b605_Content Pattern.svg" class="pattern">
+            <img src="images/5e865e09d8efa379a976b602_Phones.png" class="header-img" >
+            <div class="second-hero">
+                <h1 style="color: #35b8be;" class="header-text">Order online with our simple checkout.</h1>
+                <p class="header-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+                <button class="order-btn">See Our FAQ</button>
+                
+            </div>
+        </div>
+    </div>
+    <div class="second-block" id="Contact">
+        <div class="second-flex-containor">
+            <div class="second-hero">
+                <h1 style="color: #35b8be;" class="header-text">Call our store and takeaway when it suits you best.</h1>
+                <p class="header-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+                <button class="order-btn">Call +96410130029</button>
+                
+            </div>
+            <img src="images/5eb0bcb8036072a55de52baf_Food Takeaway.png" class="header-img">
+        </div>
+    </div>
+    <div class="seventh-block">
+        <div class="blocks-containor">
+            <img src="images/5e865e09d8efa3710276b5d2_Group Photo.png">
+            <div class="support">
+                <h1><span>Support</span> good food<br>and local business.</h1>
+                <button class="Order-now">Order Now</button>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div class="footer-el-containor">
+                <div class="footer-grid">
+                    <div class="left-side">
+                        <h3 class="logo" style="margin-bottom: 15px;">Logo.</h3>
+                        <p>Takeaway & Delivery template<br>for small - medium businesses.</p>
+                    </div>
+                    <div class="right-side">
+                        <h1 style="color: rgba(0, 0, 0, 0.123); margin-right: 50px;" class="info">Here is some info</h1>
+                    </div>
+                </div>
+                <div class="copy-right-containor">
+                    <div class="copy-right">
+                        <p>Built by <span style="color: #35b8be; cursor: pointer;">Yousuf Adel</span></p>
+                        <div class="social-icons">
+                            <button class="instagram"><i class="fab fa-instagram"></i></button>
+                            <button class="Youtube"><i class="fab fa-youtube"></i></button>
+                            <button class="twitter"><i class="fab fa-twitter"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+        <script src="cart.js"></script>
+</body>
+</html>
